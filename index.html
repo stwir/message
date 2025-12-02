@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>You&apos;re the best test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <h1>Test: You&apos;re the best</h1>
+    <p>If you can see this text, GitHub Pages is working and the HTML is loading.</p>
+
+    <form id="messageForm">
+        <label for="message">Your message</label><br>
+        <textarea id="message" name="message" rows="4" cols="40"></textarea><br>
+        <button type="submit">Send</button>
+    </form>
+
+    <script>
+        // Attach event listener to the form
+        const form = document.getElementById("messageForm");
+
+        form.addEventListener("submit", function (event) {
+            event.preventDefault(); // Stop real submission
+
+            // Show confirmation dialog with fixed message
+            window.confirm('Are you sure you want to send: "You\'re the best!"');
+
+            // Whatever they chose, show success
+            alert('"You\'re the best!" sent successfully.');
+
+            // Redirect to thank you page
+            window.location.href = "thankyou.html";
+        });
+    </script>
+</body>
+
+</html>
