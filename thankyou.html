@@ -64,13 +64,39 @@
     <div class="wrap">
         <img src="me.png" alt="Me">
         <h1>Thank you for your valuable contribution!</h1>
-        <p>Your message has been received.</p>
+
+        <!-- Replaced the "Your message has been received." line with this link -->
+        <p class="small">
+            <a href="#" id="jon-link">If you're JON don't click here</a>
+        </p>
+
         <p class="small">I will reach out to you soon.</p>
 
         <p class="small">
             <a href="index.html">Send another message</a>
         </p>
     </div>
+
+    <script>
+        // Attach puzzle logic to the JON link
+        const jonLink = document.getElementById("jon-link");
+
+        jonLink.addEventListener("click", function (event) {
+            event.preventDefault();
+
+            // Your secret question (change this to whatever you want)
+            const answer = prompt("What is the founding year of the DREAMTEAM?");
+
+            // Check answer (change '7' to the correct answer to your question)
+            if (answer && answer.trim() === "1986") {
+                // Open the secret page if correct
+                // Change "jon.html" to whatever URL you want
+                window.location.href = "jon.html";
+            } else {
+                alert("Wrong answer. Try Again");
+            }
+        });
+    </script>
 </body>
 
 </html>

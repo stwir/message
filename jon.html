@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Definitely not for JON</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            background: #020617;
+            color: #f9fafb;
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 1.5rem;
+            box-sizing: border-box;
+        }
+
+        .wrap {
+            max-width: 720px;
+            width: 100%;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 0.25rem;
+        }
+
+        p {
+            margin-top: 0;
+            margin-bottom: 1.5rem;
+            color: #e5e7eb;
+        }
+
+        video {
+            max-width: 100%;
+            border-radius: 1rem;
+            box-shadow: 0 18px 45px rgba(0, 0, 0, 0.7);
+        }
+
+        .small {
+            margin-top: 1rem;
+            font-size: 0.85rem;
+            color: #9ca3af;
+        }
+
+        a {
+            color: #a5b4fc;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <h1>Well, well, well.</h1>
+        <p>You answered the question correctly. This is definitely not meant for JON.</p>
+
+        <!-- Local or hosted video -->
+        <!-- Put jon-video.mp4 in the same repo, or replace src with any direct video URL -->
+        <video controls>
+            <source src="jon-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <p class="small">
+            <a href="index.html">Back to the message machine</a>
+        </p>
+    </div>
+</body>
+
+</html>
